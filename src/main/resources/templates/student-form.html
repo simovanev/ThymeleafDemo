@@ -28,10 +28,14 @@
 
     </select>
     <br><br>
-    Favourite programing language
-    <input type="radio" th:field="*{programingLanguage}" th:value="Java">Java
-    <input type="radio" th:field="*{programingLanguage}" th:value="Python">Python
-    <input type="radio" th:field="*{programingLanguage}" th:value="PHP">PHP
+    Favourite programing language:
+<!--    <input type="radio" th:field="*{programingLanguage}" th:value="Java">Java-->
+<!--    <input type="radio" th:field="*{programingLanguage}" th:value="Python">Python-->
+<!--    <input type="radio" th:field="*{programingLanguage}" th:value="PHP">PHP-->
+    <input type="radio" th:field="*{programingLanguage}"
+    th:each="language: ${languages}"
+    th:value="${language}"
+    th:text="${language}+' '">
     <br><br>
     <input type="submit" value="Submit">
 
