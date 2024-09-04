@@ -29,14 +29,26 @@
     </select>
     <br><br>
     Favourite programing language:
-<!--    <input type="radio" th:field="*{programingLanguage}" th:value="Java">Java-->
-<!--    <input type="radio" th:field="*{programingLanguage}" th:value="Python">Python-->
-<!--    <input type="radio" th:field="*{programingLanguage}" th:value="PHP">PHP-->
+    <!--    <input type="radio" th:field="*{programingLanguage}" th:value="Java">Java-->
+    <!--    <input type="radio" th:field="*{programingLanguage}" th:value="Python">Python-->
+    <!--    <input type="radio" th:field="*{programingLanguage}" th:value="PHP">PHP-->
     <input type="radio" th:field="*{programingLanguage}"
-    th:each="language: ${languages}"
-    th:value="${language}"
-    th:text="${language}+' '">
+           th:each="language: ${languages}"
+           th:value="${language}"
+           th:text="${language}+' '">
     <br><br>
+    Favourite operating system:
+    <!--    <input type="checkbox" th:field="*{os}" th:value="Linux">linux-->
+    <!--    <input type="checkbox" th:field="*{os}" th:value="'MS Dos'">MS Dos-->
+    <!--    <input type="checkbox" th:field="*{os}" th:value="'Microsoft Windows'">Microsoft Windows-->
+
+
+    <input type="checkbox" th:field="*{os}"
+           th:each="os:${os}"
+           th:value="${os}"
+           th:text="${os}">
+    <br><br>
+
     <input type="submit" value="Submit">
 
 </form>

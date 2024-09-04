@@ -1,10 +1,13 @@
 package com.springboot.tymeleafdeme.model;
 
+import java.util.List;
+
 public class Student {
     private String firstName;
     private String lastName;
     private String country;
     private String programingLanguage;
+    private List<String> os;
 
     public Student() {
     }
@@ -39,5 +42,13 @@ public class Student {
 
     public void setProgramingLanguage(String programingLanguage) {
         this.programingLanguage = programingLanguage;
+    }
+
+    public List<String> getOs() {
+        return os;
+    }
+
+    public void setOs(List<String> os) {
+        this.os = os;
     }
 }
