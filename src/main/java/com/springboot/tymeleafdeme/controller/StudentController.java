@@ -16,7 +16,7 @@ public class StudentController {
     private List<String> countries;
     @Value("${languages}")
     private List<String> languages;
-    @Value("${os}")
+    @Value("${oses}")
     private List<String> os;
 
     @GetMapping("/showStudentForm")

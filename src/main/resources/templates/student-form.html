@@ -44,9 +44,9 @@
 
 
     <input type="checkbox" th:field="*{os}"
-           th:each="os:${os}"
-           th:value="${os}"
-           th:text="${os}">
+           th:each="o:${os}"
+           th:value="${o}"
+           th:text="${o}+' '">
     <br><br>
 
     <input type="submit" value="Submit">
